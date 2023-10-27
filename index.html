@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <form>
+    <form name="add-number">
       <label>
         Add a Number to the Bank
         <input name="number" type="number" />
       </label>
-      <button>Add Number</button>
+      <button type="button" onclick="addToBank();">Add Number</button>
     </form>
     <main>
       <section id="numberBank">
         <h1>Number Bank</h1>
-        <output></output>
+        <output id="bank"></output>
         <div>
-          <button id="sortOne">Sort 1</button>
-          <button id="sortAll">Sort All</button>
+          <button id="sortOne" onclick="sortBankOne();">Sort 1</button>
+          <button id="sortAll" onclick="sortBankAll();">Sort All</button>
         </div>
       </section>
       <section id="sortedNumbers">
         <h1>Sorted Numbers</h1>
         <section id="odds">
           <h2>Odds</h2>
-          <output></output>
+          <output id="odd-bank"></output>
         </section>
         <section id="evens">
           <h2>Evens</h2>
-          <output></output>
+          <output id="even-bank"></output>
         </section>
       </section>
     </main>
